@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: darkblue;
+    background-size: cover;
+    background-position: center;
+}
+  
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: cyan;
+}
+
+header{
+    position: relative;
+    padding: 0%;
+}
+
+.navbar{
+   width: 100%; 
+   height: 60px;
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-family:cursive;
+    color: cyan;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.action_btn{
+    background-color: rgb(8, 105, 16);
+    color: antiquewhite;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: antiquewhite;
+}
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+}
+
+h1{
+   position: relative; 
+   font-size: 14vw;
+   color: black;
+   -webkit-text-stroke: 0.3vw #383d52;
+   text-transform:uppercase;
+   
+}
+
+h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top:0 ;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:#01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0% ,10%,100%{
+        width: 0;
+    }
+    70% ,90%{
+        width: 100%;
+    }
+}
+
+.product-gallery {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+
+}
+
+.product-gallery li {
+    display:inline-flex;
+    margin: 10px;
+}
+
+.product-gallery img {
+    width: 200px; 
+    height: 300px; 
+    object-fit: cover; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+ 
+#contact {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Contact {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .Contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .Contact form {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .Contact .box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .Contact .box:focus {
+    outline: none;
+    border-color: dodgerblue;
+  }
+
+  .Contact .action_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .Contact .action_btn:hover {
+    background-color: #007bb5;
+  }
+#message{
+    display: none;
+    color: #01fe87;
+    margin-top: 10px;
+}

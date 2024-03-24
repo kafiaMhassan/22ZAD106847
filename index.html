@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIMEDIA PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><a href="#">BOOBOO <br>MART </a></div>
+    <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#shop-section" class="action_btn">shop now</a>
+    <div class="toggle_btn  "></div>
+  </div>  
+  <main>
+    <section id="hero">
+      <h1 data-text="welcome">welcome</h1>
+    </section>
+  </main>
+<div id="home">
+  <h2>home </h2>
+</div>
+
+<div id="about" style="background-color: aliceblue; height:100vh;">
+  <h2></h2>
+
+       <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+  <p>we are an online shop that sell various home item. please contact us if any of our items interest you</p>
+</div> 
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="contact" class="Contact" style="background-color: rgb(50, 125, 142); height:100vh;">
+  <h2>contact </h2>
+  <form action="">
+    <input type="text" placeholder="name" class="box">
+    <input type="email" placeholder="email" class="box">
+    <input type="number" placeholder="number" class="box">
+    <textarea name="" class="box" placeholder="message" id="" cols="30" row="10"></textarea>
+
+<input type="submit" value="send message" class="action_btn">
+  </form>
+  <p id="message">message sent</p>
+</div>
+
+<div id="shop-section" style="background-color: white; height:100vh">
+<h2>our products</h2>
+
+<ol class="product-gallery">
+        <li>
+            <img src="lotion.jpg" alt="lotion">
+            <h4>LOTION<br> ksh.500</h4>
+        </li>
+        <li>
+            <img src="laptop.jpg" alt="laptop">
+            <h4>LAPTOP <br> ksh.3000</h4>
+        </li>
+        <li>
+            <img src="fake plant.jpg" alt="fake plant">
+            <h4>FAKE PLANT<br>ksh.300</h4>
+        </li>
+        <li>
+            <img src="lamp.jpg" alt="lamp">
+            <h4>LAMP<br>ksh.20</h4>
+        </li>
+        <li>
+            <img src="torch.jpg" alt="torch">
+            <h4>TORCH<br>ksh.70</h4>
+        </li>
+        <li>
+            <img src="vase.jpg" alt="vase">
+            <h4>VASE <br>ksh.900</h4>
+        </li>
+        <li>
+            <img src="water bottle.jpg" alt="water bottle">
+            <h4>WATER BOTTLE<br>50</h4>
+        </li>
+  </ol>   
+  
+  
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+  
+
+</body>
+</html>
